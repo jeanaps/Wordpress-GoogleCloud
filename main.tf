@@ -43,7 +43,7 @@ resource "google_compute_instance" "helloworld" {
 #----------------------------------------------
 # Cria SQL Gerenciado com Engine MySQL 
 resource "google_sql_database_instance" "wordpressdb" {
-  name             = "database-wp"
+  name             = "databasewp"
   database_version = var.db-version
   region           = var.region
   settings {
