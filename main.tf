@@ -24,7 +24,7 @@ resource "google_compute_instance" "helloworld" {
     connection {
       type        = "ssh"
       user        = "jean.aps12"
-      private_key = file("../id_rsa")
+      private_key = file("id_rsa")
       host        = google_compute_instance.helloworld.network_interface.0.access_config.0.nat_ip
       timeout     = "90s"
     }
