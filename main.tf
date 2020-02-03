@@ -39,7 +39,7 @@ resource "google_compute_instance" "helloworld" {
 #  provisioner "local-exec" {
 #    command = "ansible-playbook -i ansible/inventory --private-key ../id_rsa ansible/playbook.yml"
 #  }
-#}
+}
 #----------------------------------------------
 # Cria SQL Gerenciado com Engine MySQL 
 resource "google_sql_database_instance" "wordpressdb" {
